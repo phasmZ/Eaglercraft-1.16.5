@@ -1,0 +1,16 @@
+{
+  "name": "Eaglercraft 1.16 Compilation Environment",
+  "image": "mcr.microsoft.com/devcontainers/ubuntu:20.04",
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "ms-vscode.cpptools"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y openjdk-17-jdk git curl maven",
+  "forwardPorts": [],
+  "mounts": [
+    // Mount your source code directory here if needed
+  ]
+}
